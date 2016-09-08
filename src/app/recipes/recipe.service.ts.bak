@@ -4,7 +4,7 @@ import { Recipe } from "./recipe";
 import { Ingredient } from "../shared";
 
 @Injectable()
-export class RecipeService {
+export class RecipesService {
   private recipes: Recipe[] = [
     new Recipe('Schnitzel', 'Very tasty', 'http://www.marcgunther.com/wp-content/uploads/wienerschnitzel-300x176.jpg', [
       new Ingredient('French Fries', 2),
@@ -13,12 +13,12 @@ export class RecipeService {
     new Recipe('Summer Salad', 'Okayish', 'http://ohmyveggies.com/wp-content/uploads/2013/06/the_perfect_summer_salad.jpg', [])
   ];
   constructor() { }
-
+/*
   getRecipes()  {
     return this.recipes;
   }
-
-  getRecipe(id: number) {
+*/
+  getRecipes(id: number) {
     return this.recipes[id];
   }
 
